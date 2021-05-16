@@ -33,4 +33,6 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: Publish Marquee board
-          path: ${{ github.workspace }}/build/*.tar.gz
+          path: |
+            build/*.tar.gz
+            build/*.deb

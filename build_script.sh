@@ -19,3 +19,4 @@ make -j
 
 cd $DIR/build
 cpack -G TGZ
+cpack -G DEB
