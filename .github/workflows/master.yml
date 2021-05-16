@@ -31,7 +31,6 @@ jobs:
         run: ./build_script.sh
 
       - uses: actions/upload-artifact@v2
-      - name: Uploading installer...
         with:
           name: marquee_board.zip
           path: |
