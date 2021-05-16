@@ -30,3 +30,8 @@ jobs:
         run: |
           docker pull ghcr.io/rvanderaar/raspi_buster_sdk/raspi_buster_sdk:latest
           docker run -v$PWD:/workspace/marquee_board -w /workspace/marquee_board  ghcr.io/rvanderaar/raspi_buster_sdk/raspi_buster_sdk:latest ./build_script.sh
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: MarqueeBoard
+          path: ${{ github.workspace }}/build/*.tar.gz
