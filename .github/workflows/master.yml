@@ -31,8 +31,9 @@ jobs:
         run: ./build_script.sh
 
       - uses: actions/upload-artifact@v2
+      - name: Uploading installer...
         with:
-          name: Publish Marquee board
+          name: marquee_board.zip
           path: |
             build/*.tar.gz
             build/*.deb
