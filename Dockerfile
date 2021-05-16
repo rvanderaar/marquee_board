@@ -1,1 +1,1 @@
-FROM rvanderaar/raspi_buster_sdk:latest
+FROM ghcr.io/rvanderaar/raspi_buster_sdk/raspi_buster_sdk:latest
