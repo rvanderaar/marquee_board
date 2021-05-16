@@ -30,7 +30,7 @@ jobs:
       - name: Build Marquee board...
         run: ./build_script.sh
 
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v2
         with:
           name: Publish Marquee board
           path: ${{ github.workspace }}/build/*.tar.gz
