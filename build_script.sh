@@ -16,3 +16,6 @@ export RASPBERRY_VERSION=1
 
 cmake -DCMAKE_TOOLCHAIN_FILE=$DIR/Toolchain-rpi.cmake -DCMAKE_BUILD_TYPE=Debug $DIR
 make -j
+
+cd $DIR/build
+cpack -G TGZ
